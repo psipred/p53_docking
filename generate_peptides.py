@@ -6,15 +6,15 @@ def make_peptides(letters):
   pep_strs = list(map("".join, product(letters, repeat=3)))
   # print(pep_strs)
   for pep_str in pep_strs:
-    pypept_args = ['python3',
-                   '/home/aiman/pyPept/src/run_pyPept.py',
+    pypept_args = [#'python3',
+                   '/home/aiman/virtualenvs/diffdock/bin/run_pyPept',
                     '--fasta',
                     pep_str,
                     '--prefix',
                     pep_str]
     pypept_out = subprocess.check_output(pypept_args)
     
-    obabel_args = ['/snap/bin/openbabel.obabel', 
+    obabel_args = ['/usr/bin/obabel', 
                    '-ipdb', 
                    f"{pep_str}.pdb", 
                    '-osdf',
