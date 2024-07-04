@@ -16,7 +16,7 @@ for pep_str in pep_strs:
         for inference_step in inference_steps:
             parameter_args = ['/home/aiman/virtualenvs/diffdock/bin/python',
                             '-m',
-                            '/home/aiman/DiffDock/inference.py',
+                            '/home/aiman/DiffDock/inference',
                             '--protein_path',
                             '/home/aiman/DiffDock/1YCR.pdb',
                             '--ligand', 
