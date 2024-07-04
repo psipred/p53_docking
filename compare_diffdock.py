@@ -25,9 +25,9 @@ for pep_str in pep_strs:
                             '--complex_name',
                             pep_str,
                             '--inference_steps',
-                            inference_step,
+                            str(inference_step),
                             '--samples_per_complex',
-                            sample_complex]
+                            str(sample_complex)]
         
             parameter_out = subprocess.check_output(parameter_args)
 
