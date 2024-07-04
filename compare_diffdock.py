@@ -26,7 +26,7 @@ def run_diff():
                                 '--out_dir',
                                 "/home/aiman/DiffDock/results/",
                                 '--complex_name',
-                                pep_str,
+                                f'{inference_step}_{sample_complex}_{pep_str}',
                                 '--inference_steps',
                                 str(inference_step),
                                 '--samples_per_complex',
@@ -37,8 +37,9 @@ def run_diff():
             break
             
         #Print rank1 for every parameter pair tested
-        for rank in glob.glob(f"/home/aiman/DiffDock/results/{pep_str}/rank1_confidence*.sdf"):
-            print(rank)
+        for file in glob.glob(f"/home/aiman/DiffDock/results/*/rank1_confidence*.sdf"):
+            print(file)
+            # print(f'{inference_step},{sample_complex},rank')
 
 
 run_diff()
