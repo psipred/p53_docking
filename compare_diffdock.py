@@ -4,7 +4,7 @@ import glob
 import os
 
 #Random peptides to test
-pep_strs = ['AAA']
+pep_strs = ['AAA', 'ADN', 'WPA', 'YYY']
 
 def run_diff():
 #Generate the range to test
@@ -33,11 +33,12 @@ def run_diff():
                                 str(sample_complex)]
                 os.chdir("/home/aiman/DiffDock/")
                 parameter_out = subprocess.check_output(parameter_args)
-    
+                break
+            break
             
         #Print rank1 for every parameter pair tested
         for rank in glob.glob(f"/home/aiman/DiffDock/results/{pep_str}/rank1_confidence*.sdf"):
-            print (rank)
+            print(rank)
 
 
 run_diff()
