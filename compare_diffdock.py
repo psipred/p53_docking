@@ -35,4 +35,4 @@ for pep_str in pep_strs:
     #Print rank1 for every parameter pair tested
     for rank in glob.glob(f"/home/aiman/DiffDock/results/{pep_str}/rank1_confidence*.sdf"):
         print (rank)
-        exit ()
+    
