@@ -15,13 +15,13 @@ for pep_str in pep_strs:
     for sample_complex in samples_complex:
         for inference_step in inference_steps:
             parameter_args = ['-m',
-                            'home/aiman/DiffDock/inference.py',
+                            '/home/aiman/DiffDock/inference.py',
                             '--protein_path',
-                            'home/aiman/DiffDock/1YCR.pdb',
+                            '/home/aiman/DiffDock/1YCR.pdb',
                             '--ligand', 
                             f"{pep_str}.sdf",
                             '--out_dir',
-                            'home/aiman/DiffDock/results/',
+                            '/home/aiman/DiffDock/results/',
                             '--complex_name',
                             pep_str,
                             '--inference_steps',
@@ -32,6 +32,6 @@ for pep_str in pep_strs:
             parameter_out = subprocess.check_output(parameter_args)
 
     #Print rank1 for every parameter pair tested
-    for rank in glob.glob(f"home/aiman/DiffDock/results/{pep_str}/rank1_confidence*.sdf"):
+    for rank in glob.glob(f"/home/aiman/DiffDock/results/{pep_str}/rank1_confidence*.sdf"):
         print (rank)
         exit ()
