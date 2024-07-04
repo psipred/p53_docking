@@ -22,7 +22,7 @@ def run_diff():
                                 '--protein_path',
                                 "/home/aiman/DiffDock/1YCR.pdb",
                                 '--ligand', 
-                                f"{pep_str}.sdf",
+                                f"/home/aiman/p53_docking/{pep_str}.sdf",
                                 '--out_dir',
                                 "/home/aiman/DiffDock/results/",
                                 '--complex_name',
