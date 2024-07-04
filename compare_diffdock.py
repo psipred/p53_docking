@@ -34,8 +34,8 @@ def run_diff():
                                 str(sample_complex)]
                 os.chdir("/home/aiman/DiffDock/")
                 parameter_out = subprocess.check_output(parameter_args)
-                # break
-            # break
+                break
+            break
             
         #Print rank1 for every parameter pair tested
 
