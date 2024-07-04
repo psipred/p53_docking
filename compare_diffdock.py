@@ -34,13 +34,13 @@ def run_diff():
                                 str(sample_complex)]
                 os.chdir("/home/aiman/DiffDock/")
                 parameter_out = subprocess.check_output(parameter_args)
-                break
-            break
+                # break
+            # break
             
         #Print rank1 for every parameter pair tested
 
 
-# run_diff()
+run_diff()
 print("peptide,inference,sample,conf")
 for file in glob.glob(f"/home/aiman/DiffDock/results/*/rank1_confidence*.sdf"):
     # print(file)
