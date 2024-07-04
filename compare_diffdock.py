@@ -2,6 +2,7 @@ from itertools import islice
 import subprocess
 import glob
 import os
+import re
 
 #Random peptides to test
 pep_strs = ['AAA', 'ADN', 'WPA', 'YYY']
@@ -37,9 +38,12 @@ def run_diff():
             break
             
         #Print rank1 for every parameter pair tested
-        for file in glob.glob(f"/home/aiman/DiffDock/results/*/rank1_confidence*.sdf"):
-            print(file)
-            # print(f'{inference_step},{sample_complex},rank')
 
 
-run_diff()
+# run_diff()
+print("peptide,inference,sample,conf")
+for file in glob.glob(f"/home/aiman/DiffDock/results/*/rank1_confidence*.sdf"):
+    print(file)
+    m = re.search('^/home/aiman/DiffDock/results/(\d+)_(\d+)_(\w{3})/rank1_confidence(.+)\.sdf', file)
+    if m:
+        print(f'{m.group(2)},{m.group(0)},{m.group(1)},{m.group(3)}')
