@@ -5,7 +5,7 @@ import os
 import re
 
 #Random peptides to test
-pep_strs = ['AAA', 'ADN', 'WPA', 'YYY']
+pep_strs = ['AAA', 'ADN', 'WPA', 'YYY', 'IQL', 'VMG', 'MFT', 'YKE', 'HWQ', 'RNV', 'FEP', 'ECT', 'HLD', 'SYH', 'LSI', 'DGC', 'KSR', 'NVH', 'CIA', 'TCM']
 
 def run_diff():
 #Generate the range to test
@@ -23,7 +23,7 @@ def run_diff():
                                 '--protein_path',
                                 "/home/aiman/DiffDock/1YCR.pdb",
                                 '--ligand', 
-                                f"/home/aiman/p53_docking/{pep_str}.sdf",
+                                f"/home/aiman/p53_docking/peptides/{pep_str}.sdf",
                                 '--out_dir',
                                 "/home/aiman/DiffDock/results/",
                                 '--complex_name',

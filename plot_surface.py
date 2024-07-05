@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt # type: ignore
+import matplotlib.pyplot as plt 
 import csv
 
 x = [] 
@@ -9,10 +9,10 @@ with open('dd_test.csv','r') as csvfile:
       
     for row in plots: 
         x.append(row[3]) 
-        y.append(int(row[1])) 
+        y.append(row[1])
   
 plt.plot(x, y) 
-plt.xlabel('Confidence') 
+plt.xlabel('Confidence')
 plt.ylabel('Sample') 
 plt.title('Sample vs confidence')
 plt.show() 
