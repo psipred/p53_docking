@@ -7,7 +7,7 @@ from itertools import product
 
 def run_diff():
     
-    for file in glob.glob(f"/home/aiman/p53_docking/*.sdf"):
+    for file in glob.glob(f"/home/aiman/p53_docking/peptides/*.sdf"):
         pep_str = file[24:27]
         parameter_args = ['/home/aiman/virtualenvs/diffdock/bin/python',
                             '-m',
