@@ -22,9 +22,9 @@ def run_diff():
                             f'{pep_str}',
                             #change parameters according to preference
                             '--inference_steps',
-                            '10',
+                            '80',
                             '--samples_per_complex',
-                            '10']
+                            '15']
         os.chdir("/home/aiman/DiffDock/")
         parameter_out = subprocess.check_output(parameter_args)
             # break
