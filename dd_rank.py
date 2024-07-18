@@ -17,12 +17,13 @@ for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
         for mol in pybel.readfile('sdf', file):
             add = 0
             i = 0
+            process = True
             for atom in mol:
                 coords = atom.coords
-                print(coords)
                 if np.isnan(coords[0]) or np.isnan(coords[1]) or np.isnan(coords[2]):
-                    print("hi")
-                    continue
+                    process = False
+            if not process:
+                break
             for file1 in (glob.glob(f"{file0}rank1_confidence*.sdf")):
                 for mol2 in pybel.readfile('sdf', file1):
                     for idx, atom in enumerate(mol):
