@@ -18,6 +18,7 @@ for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
             i = 0
             for atom in mol:
                 for file1 in (glob.glob(f"{file0}rank1_confidence*.sdf")):
+                    print(file1)
                     for mol2 in pybel.readfile('sdf', file1):
                         for atom2 in mol2:
                             coord1 = atom2.coords
