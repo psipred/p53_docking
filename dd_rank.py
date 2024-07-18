@@ -24,7 +24,8 @@ for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
                             coord1 = atom2.coords
                             if (atom2.idx == atom.idx):
                                 coord2 = atom.coords
-                                print(type(coord2[0])) 
+                                if math.isnan(coord2[0]) or math.isnan(coord2[1]) or math.isnan(coord2[3]):
+                                    continue
                                 P = coord1
                                 Q = coord2
                                 moldistance = math.dist(P,Q)
