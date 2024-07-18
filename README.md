@@ -33,3 +33,7 @@ Calculates the mean and standard deviation for the distance between the ranks
 python3 dd_rank.py
 ```
 
+calculates the maximum length of the peptides
+```bash
+python3 pep_length.py
+```

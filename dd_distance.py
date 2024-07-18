@@ -27,7 +27,7 @@ for model in structure:
                 pdb_atom_type = atom1.get_id ()
                 residue_name = residue.get_resname()
                 residue_id = residue.full_id[3][1]
-                print (f"{residue_name},{residue_id},{pdb_atom_type}, {closest_lig_atom_type}, {closest_lig_atom_id}, {min_dist}")
+                print (f"{residue_name},{residue_id},{pdb_atom_type},{closest_lig_atom_type},{closest_lig_atom_id},{min_dist}")
                 
                         
 
