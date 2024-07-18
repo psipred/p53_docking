@@ -24,7 +24,7 @@ for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
                 for mol2 in pybel.readfile('sdf', file1):
                     for idx, atom in enumerate(mol):
                     # print(file, file1)
-                        atom2 = mol2[idx]
+                        atom2 = list(mol2)[idx]
                         coord1 = atom2.coords
                         if (atom2.idx == atom.idx):
                             coord2 = atom.coords
