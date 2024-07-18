@@ -18,7 +18,8 @@ for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
             i = 0
             for atom in mol:
                 coords = atom.coords
-                if math.isnan(coords[0]) or math.isnan(coords[1]) or math.isnan(coords[2]):
+                if not isinstance(coords[0], float) or not isinstance(coords[1], float) or not isinstance(coords[2], float):
+                    print("hi")
                     continue
             for file1 in (glob.glob(f"{file0}rank1_confidence*.sdf")):
                 for mol2 in pybel.readfile('sdf', file1):
