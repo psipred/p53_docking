@@ -26,13 +26,14 @@ for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
                                 P = coord1
                                 Q = coord2
                                 moldistance = math.dist(P,Q)
+                                print(moldistance)
                                                             
                 add += moldistance
                 i += 1
             avg = add/i 
             distance.append(avg)
     print(distance)
-    
+
     avg_dist = statistics.mean(distance)
     stdev = statistics.stdev(distance)
     print (f"{file0[36:39]},{str(avg_dist)},{str(stdev)}")
