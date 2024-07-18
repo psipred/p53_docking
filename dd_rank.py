@@ -7,6 +7,8 @@ import statistics
 
 print("Peptide,Average,Standard Deviation")
 for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
+    if "ACE" not in file0[36:39]:
+        continue
     distance = []
     avg_dist = 0
     
