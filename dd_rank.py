@@ -17,26 +17,26 @@ for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
             add = 0
             i = 0
             for atom in mol:
-                for file1 in (glob.glob(f"{file0}rank1_confidence*.sdf")):
-                    print(file, file1)
-                    for mol2 in pybel.readfile('sdf', file1):
-                        for atom2 in mol2:
-                            coord1 = atom2.coords
-                            if (atom2.idx == atom.idx):
-                                coord2 = atom.coords
-                                if math.isnan(coord2[0]) or math.isnan(coord2[1]) or math.isnan(coord2[3]):
-                                    continue
-                                P = coord1
-                                Q = coord2
-                                moldistance = math.dist(P,Q)
-                                print(coord1, coord2, moldistance)
+                coords = atom.coords
+                if math.isnan(coords[0]) or math.isnan(coords[1]) or math.isnan(coords[3]):
+                    continue
+            for file1 in (glob.glob(f"{file0}rank1_confidence*.sdf")):
+                for mol2 in pybel.readfile('sdf', file1):
+                    for idx, atom in enumerate(mol):
+                    # print(file, file1)
+                        atom2 = mol2[idx]
+                        coord1 = atom2.coords
+                        if (atom2.idx == atom.idx):
+                            coord2 = atom.coords
+                            P = coord1
+                            Q = coord2
+                            moldistance = math.dist(P,Q)
+                            # print(coord1, coord2, moldistance)
                                                             
                 add += moldistance
                 i += 1
             avg = add/i 
             distance.append(avg)
-    print(distance)
-
     avg_dist = statistics.mean(distance)
     stdev = statistics.stdev(distance)
     print (f"{file0[36:39]},{str(avg_dist)},{str(stdev)}")
