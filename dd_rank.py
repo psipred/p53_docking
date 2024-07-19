@@ -8,8 +8,8 @@ import numpy as np
 
 print("Peptide,Average,Standard Deviation")
 for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
-    if "ACE" not in file0[36:39]:
-        continue
+    # if "ACE" not in file0[36:39]:
+    #     continue
     distance = []
     avg_dist = 0
     
@@ -17,12 +17,12 @@ for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
         for mol in pybel.readfile('sdf', file):
             add = 0
             i = 0
-            process = True
+            process_file = True
             for atom in mol:
                 coords = atom.coords
                 if np.isnan(coords[0]) or np.isnan(coords[1]) or np.isnan(coords[2]):
-                    process = False
-            if not process:
+                    process_file = False
+            if not process_file:
                 break
             for file1 in (glob.glob(f"{file0}rank1_confidence*.sdf")):
                 for mol2 in pybel.readfile('sdf', file1):
