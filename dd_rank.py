@@ -1,5 +1,3 @@
-import Bio.PDB
-from Bio.PDB import *
 from openbabel import pybel
 import math
 import glob
@@ -12,6 +10,14 @@ for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
     #     continue
     distance = []
     avg_dist = 0
+
+    with open(file, "r") as fhIn:
+            content = fhIn.read()
+            lines = content.split("\n")
+            analysis_line = lines[4].lstrip()
+            entries = analysis_line.split()
+            if len(entries) < 16:
+                continue
     
     for file in (glob.glob(f"{file0}rank*_confidence*.sdf")):
         for mol in pybel.readfile('sdf', file):
