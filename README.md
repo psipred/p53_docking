@@ -5,7 +5,7 @@
 ``` bash
 python3 generate_peptides.py
 ```
-##compare_diffdock.py
+## compare_diffdock.py
 
 2. compares rank1_confidence scores for pairs of inference_steps and samples_per_complex (Output:test2.csv)
 
