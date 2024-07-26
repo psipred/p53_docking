@@ -57,6 +57,7 @@ python3 plot_mean.py
 python3 plot_all_means.py
 ``` 
 Project space directory guide -:
+
 peptides:sdf files of the 8000 peptides
 
 fin_results: results output of the final diffdock run for the 8000 peptides
