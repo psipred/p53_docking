@@ -7,12 +7,12 @@ python3 generate_peptides.py
 ```
 ##compare_diffdock.py
 
-2. compares rank1_confidence scores for inference_steps and samples_per_complex
+2. compares rank1_confidence scores for pairs of inference_steps and samples_per_complex (Output:test2.csv)
 
 ``` bash
 python3 compare_diffdock.py
 ```
-5. runs diffdock for all n peptides (n=8000)
+5. runs diffdock for all n peptides (n=8000)(Output: fin_results, dd_fin.csv)
 
 ``` bash
 python3 diffdock_final.py
@@ -23,17 +23,17 @@ python3 diffdock_final.py
 python3 dd_distance.py
 ```
 
-4. Generates a 3D scatter plot for confidence_score vs samples_per_complex vs inference_steps
+4. Generates a 3D scatter plot for confidence_score vs samples_per_complex vs inference_steps (Input:dd_test2.csv, output:graph)
 ``` bash
 python3 plot_3d.py
 ```
 
-8. Calculates the mean and standard deviation for the distance between the ranks
+8. Calculates the mean and standard deviation for the distance between the ranks (Input: peptides from fin_results, output:dd_stats2.csv)
 ``` bash
 python3 dd_rank.py
 ```
 
-7. calculates the maximum length of the peptides
+7. calculates the maximum length of the peptides (Input: rank1_confidence of peptides, Output: pep_length.csv)
 ```bash
 python3 pep_length.py
 ```
@@ -62,11 +62,11 @@ peptides:sdf files of the 8000 peptides
 
 fin_results: results output of the final diffdock run for the 8000 peptides
 
-csvs: dd_fin- list of confidence scores for 8000 peptides,  
+csvs: *dd_fin- list of confidence scores for 8000 peptides,  
 dd_test,dd_test2- inference_steps and samples_per_complex pairs along with confidence score of 3,20 peptides (grid search),  
 dd_stats2- Mean distance, standard deviation and confidence scores of 8000 peptides  
 pep_length- Maximum length of the 8000 peptides  
-bad_pep- list of 'bad' peptides with mean dist and confidence score, good_pep- list of 'good' peptides with mean dist and confidence score  
+bad_pep- list of 'bad' peptides with mean dist and confidence score, good_pep- list of 'good' peptides with mean dist and confidence score*  
 
 pep_graphs: svg files of histograms of the mean distance for GAA, GSN, LMC and GWC + word file for the histograms of all peptides, bad peptides and good peptides  
 pep_pymol: pymol files for GAA, GSN, LMC and GWC  
