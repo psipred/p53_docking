@@ -15,5 +15,5 @@ with open('dd_test2.csv','r') as csvfile:
 plt.plot(x, y)
 plt.xlabel('Confidence')
 plt.ylabel('Sample')
-plt.title('3D plot')
+plt.title('Sample vs Confidence')
 plt.show()
