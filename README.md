@@ -62,15 +62,15 @@ peptides:sdf files of the 8000 peptides
 
 fin_results: results output of the final diffdock run for the 8000 peptides
 
-csvs: dd_fin- list of confidence scores for 8000 peptides,
-dd_test,dd_test2- inference_steps and samples_per_complex pairs along with confidence score of 3,20 peptides (grid search),
-dd_stats2- Mean distance, standard deviation and confidence scores of 8000 peptides
-pep_length- Maximum length of the 8000 peptides
-bad_pep- list of 'bad' peptides with mean dist and confidence score, good_pep- list of 'good' peptides with mean dist and confidence score
+csvs: dd_fin- list of confidence scores for 8000 peptides,  
+dd_test,dd_test2- inference_steps and samples_per_complex pairs along with confidence score of 3,20 peptides (grid search),  
+dd_stats2- Mean distance, standard deviation and confidence scores of 8000 peptides  
+pep_length- Maximum length of the 8000 peptides  
+bad_pep- list of 'bad' peptides with mean dist and confidence score, good_pep- list of 'good' peptides with mean dist and confidence score  
 
-pep_graphs: svg files of histograms of the mean distance for GAA, GSN, LMC and GWC + word file for the histograms of all peptides, bad peptides and good peptides
-pep_pymol: pymol files for GAA, GSN, LMC and GWC
-(GAA- mean distance lower than the peptide length (good peptide) and narrow standard deviation. 
-GSN- mean distance shorter than the peptide length (good peptide) but broad standard deviation. 
-LMC- mean distance longer than the peptide length (bad peptide) and broad standard deviation. 
+pep_graphs: svg files of histograms of the mean distance for GAA, GSN, LMC and GWC + word file for the histograms of all peptides, bad peptides and good peptides  
+pep_pymol: pymol files for GAA, GSN, LMC and GWC  
+(GAA- mean distance lower than the peptide length (good peptide) and narrow standard deviation.   
+GSN- mean distance shorter than the peptide length (good peptide) but broad standard deviation.  
+LMC- mean distance longer than the peptide length (bad peptide) and broad standard deviation.  
 GWC- mean distance longer than the peptide length (bad peptide) but narrow standard deviation.)  
