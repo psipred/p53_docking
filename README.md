@@ -8,27 +8,28 @@ python3 generate_peptides.py
 ## compare_diffdock.py
 
 2. compares rank1_confidence scores for pairs of inference_steps and samples_per_complex (Output:test2.csv)
+This, was a small benchmarking script to explore these two parameters
 
 ``` bash
 python3 compare_diffdock.py
 ```
-5. runs diffdock for all n peptides (n=8000)(Output: fin_results, dd_fin.csv)
-
+3. runs diffdock for all n peptides (n=8000)(Output: fin_results, dd_fin.csv)
+This is the main script that does that stuff
 ``` bash
 python3 diffdock_final.py
 ```
 
-6. Calculates the minimum distance between the heavy atoms of p53 and the peptide. Specify the peptide as the input. (Input: peptide directory, output: dd_distance.csv)
+4. Calculates the minimum distance between the heavy atoms of p53 and the peptide. Specify the peptide as the input. (Input: peptide directory, output: dd_distance.csv)
 ``` bash
 python3 dd_distance.py
 ```
 
-4. Generates a 3D scatter plot for confidence_score vs samples_per_complex vs inference_steps (Input:dd_test2.csv, output:graph)
+5. Generates a 3D scatter plot for confidence_score vs samples_per_complex vs inference_steps (Input:dd_test2.csv, output:graph)
 ``` bash
 python3 plot_3d.py
 ```
 
-8. Calculates the mean and standard deviation for the distance between the ranks (Input: peptides from fin_results, output:dd_stats2.csv)
+6. Calculates the mean and standard deviation for the distance between the ranks (Input: peptides from fin_results, output:dd_stats2.csv)
 ``` bash
 python3 dd_rank.py
 ```
@@ -37,7 +38,7 @@ python3 dd_rank.py
 ```bash
 python3 pep_length.py
 ```
-3. Plots a graph of samples_per_complex vs confidence score. Can be used for inference_steps by changing the y-axis. (Input: dd_test2.csv, Output: graph)
+8. Plots a graph of samples_per_complex vs confidence score. Can be used for inference_steps by changing the y-axis. (Input: dd_test2.csv, Output: graph)
 ```bash
 python3 plot_surface.py
 ``` 
