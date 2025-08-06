@@ -4,7 +4,7 @@ from openbabel import pybel
 import math
 import glob
 
-for file in (glob.glob(f"/home/aiman/p53_docking/fin_results/*/rank1_confidence*.sdf")): 
+for file in (glob.glob(f"/home/aiman/p53_docking/mdm2_results/*/rank1_confidence*.sdf")): 
     for mol in pybel.readfile('sdf', file):
         max_dist = 0
         for atom in mol:
@@ -18,4 +18,4 @@ for file in (glob.glob(f"/home/aiman/p53_docking/fin_results/*/rank1_confidence*
                     if moldistance >= max_dist:
                         max_dist = moldistance
 
-    print(f"{file[36:39]},{max_dist}")
+    print(f"{file[37:40]},{max_dist}")

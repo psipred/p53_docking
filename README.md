@@ -1,4 +1,4 @@
-# Small benchmarking to pick params
+# Generate the data needed
 
 ## generate_peptides.py
 
@@ -8,12 +8,7 @@
 python3 generate_peptides.py
 ```
 
-2. Generates a 3D scatter plot for confidence_score vs samples_per_complex vs inference_steps (Input:dd_test2.csv, output:graph)
-``` bash
-python3 plot_3d.py
-```
-
-# DiffDock analysis
+# Make a small benchmark of 20 and plot the outputs
 
 ## compare_diffdock.py
 
@@ -24,42 +19,52 @@ This, was a small benchmarking script to explore these two parameters
 python3 compare_diffdock.py
 ```
 
-2. runs diffdock for all n peptides (n=8000)(Output: mdm2_results, dd_fin.csv)
+2. Generates a 3D scatter plot for confidence_score vs samples_per_complex vs inference_steps (Input:dd_test2.csv, output:graph)
+``` bash
+python3 plot_3d.py
+```
+
+3. Plots a graph of samples_per_complex vs confidence score. Can be used for inference_steps by changing the y-axis. (Input: dd_test2.csv, Output: graph)
+```bash
+python3 plot_surface.py
+```
+
+# DiffDock analysis
+
+1. runs diffdock for all n peptides (n=8000)(Output: mdm2_results, dd_fin.csv)
 This is the main script that does that stuff
 ``` bash
 python3 diffdock_final.py > dd_fin.csv
 ```
 
-3. UNUSED Calculates the minimum distance between the heavy atoms of p53 and the peptide. Specify the peptide as the input. (Input: peptide directory, output: dd_distance.csv)
+2. UNUSED Calculates the minimum distance between the heavy atoms of p53 and the peptide. Specify the peptide as the input. (Input: peptide directory, output: dd_distance.csv)
 ``` bash
 python3 dd_distance.py > dd_distance.csv
 ```
 
-4. Calculates the mean and standard deviation for the distance between the ranks (Input: peptides from fin_results, output:dd_stats2.csv)
+3. Calculates the mean and standard deviation for the distance between the ranks (Input: peptides from fin_results, output:dd_stats2.csv)
 ``` bash
 python3 dd_rank.py > dd_stats2.csv
 ```
 
-5. calculates the maximum length of the peptides (Input: rank1_confidence of peptides, Output: pep_length.csv)
+4. calculates the maximum length of the peptides (Input: rank1_confidence of peptides, Output: pep_length.csv)
 ```bash
-python3 pep_length.py
-```
-6. Plots a graph of samples_per_complex vs confidence score. Can be used for inference_steps by changing the y-axis. (Input: dd_test2.csv, Output: graph)
-```bash
-python3 plot_surface.py
-``` 
-
-7. Generates a list of all the peptides with a mean distance less than the length of the peptide (good peptides).Can be used to generate the list of bad peptides by changing the angle bracket. (Takes dd_stats2.csv as the input file, can output good_pep.csv)
-```bash
-python3 compare_stats.py
+python3 pep_length.py > pep_length.csv
 ```
 
-8. Plots a histogram for the mean distance of the 20 ranks of a specific peptide. Specify the peptide name and path to the directory in the input. (Input: peptide directory, output: graph)
+5. Generates a list of all the peptides with a mean distance less than the length of the peptide (good peptides).Can be used to generate the list of bad peptides by changing the angle bracket. (Takes dd_stats2.csv as the input file, can output good_pep.csv)
+
+```bash
+python3 compare_stats.py > good_pep.csv
+python3 compare_stats.py > bad_pep.csv
+```
+
+6. Plots a histogram for the mean distance of the 20 ranks of a specific peptide. Specify the peptide name and path to the directory in the input. (Input: peptide directory, output: graph)
 ```bash
 python3 plot_mean.py
 ```
 
-9. Plots a histogram of the mean distance for all the 'bad peptides'. Change the input csv file to plot for the 'good peptides'. (Input:bad_pep.csv/good_pep.csv, Output:graph)(histogram generated is messy and random)
+7. Plots a histogram of the mean distance for all the 'bad peptides'. Change the input csv file to plot for the 'good peptides'. (Input:bad_pep.csv/good_pep.csv, Output:graph)(histogram generated is messy and random)
 ```bash
 python3 plot_all_means.py
 ``` 
