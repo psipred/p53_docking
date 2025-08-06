@@ -1,6 +1,6 @@
 import csv
 
-with open('dd_stats2.csv','r') as csvfile: 
+with open('dd_stats_complete.csv','r') as csvfile: 
     plots = csv.reader(csvfile, delimiter = ',') 
 
     print("Peptide,Avg dist,Stddev,Length,Confidence")  

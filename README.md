@@ -52,19 +52,24 @@ python3 dd_rank.py > dd_stats2.csv
 python3 pep_length.py > pep_length.csv
 ```
 
-5. Generates a list of all the peptides with a mean distance less than the length of the peptide (good peptides).Can be used to generate the list of bad peptides by changing the angle bracket. (Takes dd_stats2.csv as the input file, can output good_pep.csv)
+5. Fuse all the things we've calculated in to one file for analysis
+``` bash
+python combine_data.py > dd_stats_complete.csv
+```
+
+6. Generates a list of all the peptides with a mean distance less than the length of the peptide (good peptides).Can be used to generate the list of bad peptides by changing the angle bracket. (Takes dd_stats_complete.csv as the input file, can output good_pep.csv)
 
 ```bash
 python3 compare_stats.py > good_pep.csv
 python3 compare_stats.py > bad_pep.csv
 ```
 
-6. Plots a histogram for the mean distance of the 20 ranks of a specific peptide. Specify the peptide name and path to the directory in the input. (Input: peptide directory, output: graph)
+7. Plots a histogram for the mean distance of the 20 ranks of a specific peptide. Specify the peptide name and path to the directory in the input. (Input: peptide directory, output: graph)
 ```bash
 python3 plot_mean.py
 ```
 
-7. Plots a histogram of the mean distance for all the 'bad peptides'. Change the input csv file to plot for the 'good peptides'. (Input:bad_pep.csv/good_pep.csv, Output:graph)(histogram generated is messy and random)
+8. Plots a histogram of the mean distance for all the 'bad peptides'. Change the input csv file to plot for the 'good peptides'. (Input:bad_pep.csv/good_pep.csv, Output:graph)(histogram generated is messy and random)
 ```bash
 python3 plot_all_means.py
 ``` 
