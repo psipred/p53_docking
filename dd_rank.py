@@ -5,7 +5,7 @@ import statistics
 import numpy as np
 
 print("Peptide,Average,Standard Deviation")
-for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
+for file0 in glob.glob(f"/home/aiman/p53_docking/mdm2_results/*/"):
     # if "ACE" not in file0[36:39]:
     #     continue
     distance = []
@@ -49,5 +49,5 @@ for file0 in glob.glob(f"/home/aiman/p53_docking/fin_results/*/"):
             distance.append(avg)
     avg_dist = statistics.mean(distance)
     stdev = statistics.stdev(distance)
-    print (f"{file0[36:39]},{str(avg_dist)},{str(stdev)}")
+    print (f"{file0[37:40]},{str(avg_dist)},{str(stdev)}")
     
