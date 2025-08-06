@@ -1,0 +1,43 @@
+VCA.pdb
+     RDKit          3D
+
+ 19 18  0  0  1  0  0  0  0  0999 V2000
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan N   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan N   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan S   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan N   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+  2  3  1  1
+  2  1  1  0
+  4  5  1  1
+  4  2  1  0
+  6  4  1  0
+  7  6  2  0
+  8  6  1  0
+  9  8  1  0
+  9 12  1  0
+  9 10  1  6
+ 11 10  1  0
+ 12 16  1  0
+ 13 12  2  0
+ 15 14  1  6
+ 16 15  1  0
+ 17 18  1  0
+ 17 15  1  0
+ 19 17  2  0
+M  END
+$$$$

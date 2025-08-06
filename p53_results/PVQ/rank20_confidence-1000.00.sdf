@@ -1,0 +1,54 @@
+PVQ.pdb
+     RDKit          3D
+
+ 24 24  0  0  1  0  0  0  0  0999 V2000
+       nan       nan       nan N   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan N   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan N   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan N   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0
+  3  2  1  0
+  4  3  1  0
+  4  5  1  0
+  5  1  1  0
+  6  7  2  0
+  5  6  1  6
+  9  8  1  6
+  9 11  1  0
+ 10  9  1  0
+ 11 13  1  0
+ 11 12  1  1
+ 12  6  1  0
+ 13 21  1  0
+ 14 13  2  0
+ 16 15  1  0
+ 17 16  2  0
+ 18 16  1  0
+ 19 18  1  0
+ 20 19  1  6
+ 21 20  1  0
+ 22 23  1  0
+ 22 20  1  0
+ 24 22  2  0
+M  END
+$$$$

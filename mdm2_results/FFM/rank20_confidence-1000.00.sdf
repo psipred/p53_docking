@@ -1,0 +1,69 @@
+FFM.pdb
+     RDKit          3D
+
+ 31 32  0  0  1  0  0  0  0  0999 V2000
+       nan       nan       nan N   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan N   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan S   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan N   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan C   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+       nan       nan       nan O   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  6
+  2 10  1  0
+  2  3  1  0
+  3  4  1  0
+  4  9  2  0
+  5  6  2  0
+  5  4  1  0
+  6  7  1  0
+  7  8  2  0
+  9  8  1  0
+ 10 11  2  0
+ 12 13  1  0
+ 12 10  1  0
+ 13 21  1  0
+ 13 14  1  6
+ 15 14  1  0
+ 15 16  2  0
+ 17 16  1  0
+ 18 17  2  0
+ 19 20  2  0
+ 19 18  1  0
+ 20 15  1  0
+ 21 22  2  0
+ 21 28  1  0
+ 23 24  1  0
+ 24 25  1  0
+ 26 25  1  0
+ 27 26  1  6
+ 28 27  1  0
+ 29 31  1  0
+ 29 27  1  0
+ 30 29  2  0
+M  END
+$$$$

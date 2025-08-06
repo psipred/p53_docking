@@ -4,7 +4,7 @@ from openbabel import pybel
 import math
 
 parser = PDBParser()
-structure = parser.get_structure("1YCR", "1YCR.pdb")
+structure = parser.get_structure("3JZK", "3JZK.pdb")
 print("Residue,ResidueId,Atom.pdb,Atom.sdf,AtomId.sdf,Distance")
 for model in structure:
     for chain in model:

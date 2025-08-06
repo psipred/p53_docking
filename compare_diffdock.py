@@ -21,7 +21,7 @@ def run_diff():
                                 '-m',
                                 "inference",
                                 '--protein_path',
-                                "/home/aiman/DiffDock/1YCR.pdb",
+                                "/home/aiman/DiffDock/3JZK.pdb",
                                 '--ligand', 
                                 f"/home/aiman/p53_docking/peptides/{pep_str}.sdf",
                                 '--out_dir',
